@@ -1,56 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>agoodshop | iPhone 13 Pro</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <header class="site-header">
+        <nav class="navbar navbar-expand-md page-container" aria-label="Navegación principal">
+            <a class="navbar-brand" href="#inicio">agoodshop</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#main-navigation" aria-controls="main-navigation" aria-expanded="false"
+                aria-label="Abrir menú">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="main-navigation">
+                <ul class="navbar-nav ms-auto align-items-md-center">
+                    <li class="nav-item"><a class="nav-link" href="#tienda">Tienda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#accesorios">Accesorios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sorteo">Soporte</a></li>
+                    <li class="nav-item ms-md-3"><a class="btn btn-outline-secondary contact-button" href="#sorteo">Contactar</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="page-container" id="inicio">
+        <section class="product-feature" id="tienda" aria-labelledby="product-title">
+            <div class="product-image image-placeholder" role="img" aria-label="Imagen del iPhone 13 Pro">
+                <span class="weight-badge">128gb</span>
+            </div>
+            <div class="product-copy">
+                <p class="eyebrow">OFERTA</p>
+                <h1 id="product-title">Compra un iPhone 13 Pro</h1>
+                <p>iPhone 13: Tu nuevo superpoder. Nuestro sistema de cámara dual más avanzado. El chip que hace morder el polvo a la competencia. Un subidón de autonomía que vaya si notarás. Ceramic Shield, más duro que cualquier vidrio de smartphone.</p>
+                <p>Pantalla Super Retina XDR de 6,1 pulgadas. Diseño robusto con bordes planos y resistente al agua.</p>
+                <div class="purchase-row">
+                    <span class="price">938,99€</span>
+                    <a class="btn btn-primary" href="#sorteo">Comprar</a>
+                </div>
+                <ul class="benefits" aria-label="Ventajas de compra">
+                    <li><i class="bi bi-shop" aria-hidden="true"></i><span>Envío rápido, gratuito<br>y sin contacto</span></li>
+                    <li><i class="bi bi-arrow-counterclockwise" aria-hidden="true"></i><span>Devoluciones fáciles y<br>gratuitas</span></li>
+                    <li><i class="bi bi-file-earmark-lock" aria-hidden="true"></i><span>Posibilidad de pago a<br>plazos</span></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="accessories-section" id="accesorios" aria-labelledby="accessories-title">
+            <h2 id="accessories-title">Accesorios recomendados</h2>
+            <div class="row g-3 accessory-grid">
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <article class="card accessory-card h-100">
+                        <div class="card-image image-placeholder" role="img" aria-label="Imagen de un cargador"></div>
+                        <div class="card-body">
+                            <h3 class="card-title">Cargador</h3>
+                            <p class="card-text">El adaptador de corriente USB-C de 20 W es muy rápido y eficiente, así que va de perlas para cargar tus dispositivos en cualquier lugar.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <article class="card accessory-card h-100">
+                        <div class="card-image image-placeholder" role="img" aria-label="Imagen de una base de carga inalámbrica"></div>
+                        <div class="card-body">
+                            <h3 class="card-title">Base de carga inalámbrica</h3>
+                            <span class="badge text-bg-danger">Oferta</span>
+                            <p class="card-text">Sistema de soporte para que sigas usando tu smartphone cómodamente mientras lo cargas. Compatible con carga rápida de 20W.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <article class="card accessory-card h-100">
+                        <div class="card-image image-placeholder" role="img" aria-label="Imagen de una funda de piel"></div>
+                        <div class="card-body">
+                            <h3 class="card-title">Funda piel</h3>
+                            <p class="card-text">Fabricadas en piel europea curtida y teñida con un proceso especial, son suaves al tacto y adquieren un tono natural con el tiempo. Los botones de aluminio combinan a la perfección con el acabado de la piel.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <article class="card accessory-card h-100">
+                        <div class="card-image image-placeholder" role="img" aria-label="Imagen de un cargador"></div>
+                        <div class="card-body">
+                            <h3 class="card-title">Cargador</h3>
+                            <span class="badge text-bg-primary">Nuevo</span>
+                            <p class="card-text">El adaptador de corriente USB-C de 20 W es muy rápido y eficiente, así que va de perlas para cargar tus dispositivos en cualquier lugar.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="giveaway" id="sorteo" aria-labelledby="giveaway-title">
+            <div class="giveaway-copy">
+                <h2 id="giveaway-title">Participa en el sorteo de un iPhone 13</h2>
+                <p>Este verano, ¡venimos cargados de premios! Así que antes de irte de vacaciones, ¡participa en nuestro sorteo! y podrás llevarte un regalo increíble como un nuevo iPhone 13</p>
+                <p>Rellena este formulario para ser uno de los afortunados.</p>
+            </div>
+            <form class="giveaway-form">
+                <div class="mb-3">
+                    <label class="form-label" for="name">Nombre</label>
+                    <input class="form-control" id="name" name="name" type="text" placeholder="Ari Gold" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="email">Email</label>
+                    <input class="form-control" id="email" name="email" type="email" placeholder="arigold@nga.com" required>
+                </div>
+                <button class="btn btn-primary" type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© agoodshop</p>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
-
-
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">agoodshop</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <container class="d-flex justify-content-end">
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Tienda</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Accesorio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" aria-disabled="true">Soporte</a>
-                        </li>
-                    </ul>
-            </container>
-
-            <form class="d-flex" role="search">
-                <button class="btn btn-outline-success" type="submit">Contactar</button>
-            </form>
-        </div>
-        </div>
-    </nav>
-    <footer class="justify-content-end">
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-            © 2024 Copyright:
-            <a class="text-dark" href="#">agoodshop.com</a>
-        </div>
-    </footer>
 </body>
 
 </html>
