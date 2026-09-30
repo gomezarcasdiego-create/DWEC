@@ -1,5 +1,5 @@
 //Ejercicio 1
-/*let nota = 11;
+let nota = 11;
 if (nota >= 0 && nota <= 3){
     console.log("muy deficiente");
 }
@@ -14,13 +14,16 @@ else if (nota >= 9 && nota <= 10){
 }
 else if (nota < 0 || nota > 10){
     console.log("Nota no valida");
-}*/
+}
+
+
+
 
 
 
 
 //Ejercicio 2
-/*let hora = 21;
+let hora = 21;
 let minutos = 45;
 let segundos = 52;
 
@@ -44,13 +47,18 @@ if (hora === 24){
     hora = 0;
 }
 
-console.log(hora, ":", minutos, ":", segundos);*/
+console.log(hora, ":", minutos, ":", segundos);
+
+
+
+
+
 
 
 
 
 //Ejercicio 3
-/*console.log("Vamos a jugar piedra, papel o tijera. Este juego es para dos jugadores. Cada jugador debe elegir una opción: piedra, papel o tijera. El ganador se sabe caundo los jugadores han elegido su opción. Piedra gana a tijera, tijera gana a papel y papel gana a piedra. Si ambos jugadores eligen la misma opción, es un empate.");
+console.log("Vamos a jugar piedra, papel o tijera. Este juego es para dos jugadores. Cada jugador debe elegir una opción: piedra, papel o tijera. El ganador se sabe caundo los jugadores han elegido su opción. Piedra gana a tijera, tijera gana a papel y papel gana a piedra. Si ambos jugadores eligen la misma opción, es un empate.");
 const opciones = ["Piedra", "Papel", "Tijera"];
 const PA = "Piedra";
 const PI = "Papel";
@@ -62,10 +70,10 @@ function obtenerJugadaMaquina() {
 }
 
 // Llamamos a la función
-let jugadaMaquina = obtenerJugadaMaquina();
+const jugadaMaquina = obtenerJugadaMaquina();
 
 // Obtener jugada del usuario
-let jugadaUsuario = prompt("Elige tu jugada: Piedra, Papel o Tijera");
+const jugadaUsuario = prompt("Elige tu jugada: Piedra, Papel o Tijera");
 
 console.log("La máquina eligió: " + jugadaMaquina);
 console.log("Tú elegiste: " + jugadaUsuario);
@@ -100,7 +108,9 @@ if (jugadaUsuario === jugadaMaquina) {
 }
     else {
         console.log("Opción no válida");
-}*/
+}
+
+
 
 
 
@@ -108,13 +118,15 @@ if (jugadaUsuario === jugadaMaquina) {
 
 
 //Ejercicio 4
-/*const numeros = [];
+const numeros = [];
 
 for( let i =0; i< 100; i++)
 {
     numeros.push(Math.random().toFixed(2)); 
 }
-console.log(numeros);*/
+console.log(numeros);
+
+
 
 
 
@@ -122,11 +134,22 @@ console.log(numeros);*/
 
 
 //Ejercicio 5
-const numeros = [];
 
-for( let i =0; i< 100; i++)
-{
-    numeros.push(Math.random().toFixed(10)); 
+for (let i = 0; i < 100; i++) {
+    numeros.push(Number(Math.random().toFixed(10)));
 }
+
 console.log(numeros);
 
+const mayor = Math.max(...numeros);
+const menor = Math.min(...numeros);
+const promedio = numeros.reduce((acumulador, numero) => acumulador + numero, 0) / numeros.length;
+const suma = numeros.reduce((acumulador, numero) => acumulador + numero, 0);
+const mediana = numeros.sort((a, b) => a - b)[Math.floor(numeros.length / 2)];
+
+
+console.log("El número más grande es: " + mayor);
+console.log("El número más pequeño es: " + menor);
+console.log("El número promedio es: " + promedio);
+console.log("La suma de todos los números es: " + suma);
+console.log("La mediana es: " + mediana);
