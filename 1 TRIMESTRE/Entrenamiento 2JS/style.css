@@ -1,17 +1,10 @@
-body {
-    font-family: Arial, sans-serif;
-    padding: 20px;
-    text-align: center;
-}
-p {
-    color: #640f0f;
-}
-h1 {
-    color: #000000;
+p{
+    font-family: 'Arial', sans-serif;
+    padding: 30px;
 }
 
-button {background-color: #0b75a1;
-    color: white;
-    padding: 10px ;
+p1{
+    font-family: 'Arial', sans-serif;
+    padding: 30px;
+    margin-bottom: 20px;
 }
-
