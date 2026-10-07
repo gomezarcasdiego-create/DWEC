@@ -9,40 +9,24 @@ nav {
 
 .columnas {
     margin-top: 5%;
+    display: flex;
+    align-items: stretch;
+    width: 100%;
 }
 
-.col1 {
-
-    width: 20%;
-    float: left;
-    text-align: center;
-    font-size: 1.5em;
-    font-family: 'times new roman', sans-serif;
-}
-
-.col2 {
-
-    width: 80%;
-    float: left;
-    text-align: center;
-    font-size: 1.5em;
-    font-family: 'times new roman', sans-serif;
-}
-
-.col3 {
-
-    width: 150%;
-    float: left;
-    text-align: center;
-    font-size: 1.5em;
-    font-family: 'times new roman', sans-serif;
-}
-
+.col1,
+.col2,
+.col3,
 .col4 {
-
-    width: 180%;
-    float: left;
+    flex: 1;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     font-size: 1.5em;
     font-family: 'times new roman', sans-serif;
+    box-sizing: border-box;
+    
 }
+
