@@ -1,7 +1,14 @@
-const Iphone13Pro = new Iphone("Iphone 13 Pro", 1200);
-const Cargador = new Cargador("Cargador Iphone", 40);
-const Funda = new Funda("Funda Iphone", 20);
 
-console.log(Iphone13Pro);
-console.log(Cargador);
-console.log(Funda);
+
+
+
+    fetch("http://localhost:8088")
+    .then(response => response.json())
+    .then(data => {
+        function renderProducts(products) {
+            // Aquí va el código para mostrar los productos
+        }
+
+        renderProducts(data);
+    })
+    .catch(error => console.error("Error al cargar los productos:", error));
