@@ -5,34 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <link rel="stylesheet" href="style.css">
     <nav class="navbar bg-body-tertiary">
         <div class="container-fluid">
             <span class="navbar-brand mb-0 h1">Agodoshop</span>
         </div>
     </nav>
-    </div>
+
     <div id="contenedor">
         <div id="contenedorTabla">
-            <thead>
-                <tr>
-                    <th>Producto</th>
-                    <th>Cantidad</th>
-                    <th>Unidad</th>
-                    <th1>Total</th1>
-                </tr>
-            </thead>
-            <tbody id="carrito">
-            </tbody>
+            <table class="carrito-table">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Cantidad</th>
+                        <th>Unidad</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody id="carrito"></tbody>
+            </table>
         </div>
         <div id="Carritototal">
             <p>Total: <span id="precioTotal"></span>€</p>
         </div>
     </div>
+
+    <script src="app.js"></script>
 </body>
-<script src="app.js"></script>
 
 </html>
+
+
+

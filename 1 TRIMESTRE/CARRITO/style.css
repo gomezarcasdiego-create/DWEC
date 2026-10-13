@@ -1,19 +1,84 @@
-nav {
-    margin-top: 10%;
-    width: 100%;
-    height: 50px;
-    text-align: left;
-    font-size: 2.5em;
-    font-family: 'times new roman', sans-serif;
-    border-bottom: 1px solid rgb(197, 191, 191);
+* {
+    box-sizing: border-box;
 }
 
-
-contenedorTabla
-
-p {
+html, body {
     margin: 0;
-    padding: 0;
-    text-align: right;
-    font-family: 'times new roman', sans-serif;
+    background: #f6f5f4;
+    color: #101010;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
+body {
+    min-height: 100vh;
+}
+
+.navbar {
+    width: 100%;
+    height: 74px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    border-bottom: 1px solid #cfcac5;
+    background: #f6f5f4;
+}
+
+.navbar-brand {
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: -0.06em;
+    line-height: 1;
+    color: #1a1a1a;
+}
+
+#contenedor {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    gap: 568px;
+    margin: 0;
+    padding: 16px 0 0 0;
+}
+
+#contenedorTabla {
+    flex: 1;
+    padding-left: 0;
+}
+
+.carrito-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.carrito-table thead th {
+    padding: 8px 0 12px;
+    text-align: center;
+    font-size: 1.15rem;
+    font-weight: 400;
+    color: #1a1a1a;
+    border-bottom: 1px solid #c7c1bd;
+}
+
+
+
+
+
+
+
+
+#Carritototal {
+    width: 330px;
+    margin-top: 6px;
+    background: #efefee;
+    border: 1px solid #e1ddd9;
+    padding: 18px 20px 12px;
+    align-self: flex-start;
+}
+
+
+
+
+
+
+
