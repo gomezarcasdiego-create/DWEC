@@ -1,7 +1,7 @@
-// ==========================================================
+
 // LÓGICA DEL CARRITO
 // Esta clase NO conoce el HTML ni el DOM: solo guarda datos y calcula.
-// ==========================================================
+
 class Carrito {
     constructor(productos, moneda = "€") {
         this.moneda = moneda;

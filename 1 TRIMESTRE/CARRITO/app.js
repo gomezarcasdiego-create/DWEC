@@ -1,7 +1,6 @@
-// ==========================================================
-// INTERFAZ: API + DOM + EVENTOS
+
 // Aquí no se calcula nada: todo el cálculo lo hace la clase Carrito.
-// ==========================================================
+
 const API_URL = "http://localhost:8080/api/carrito";
 
 const tbody = document.getElementById("carrito");
@@ -11,7 +10,7 @@ const precioTotal = document.getElementById("precioTotal");
 let carrito;
 const filas = new Map(); // sku -> { input, celdaTotal }
 
-// ---------- Utilidades ----------
+// Utilidades 
 function formatear(importe) {
     return new Intl.NumberFormat("es-ES", { maximumFractionDigits: 2 }).format(importe) + carrito.moneda;
 }
@@ -23,7 +22,7 @@ function crear(etiqueta, clase, texto) {
     return el;
 }
 
-// ---------- Pintar productos ----------
+// Pintar productos 
 function renderProducts(productos) {
     tbody.innerHTML = "";
     filas.clear();
@@ -75,7 +74,7 @@ function renderProducts(productos) {
     renderTotal();
 }
 
-// ---------- Actualizar DOM tras un cambio ----------
+// Actualizar DOM tras un cambio 
 function cambiarUnidades(sku, unidades, corregirInput = true) {
     const unidadesFinales = carrito.actualizarUnidades(sku, unidades);
     const fila = filas.get(sku);
@@ -101,7 +100,7 @@ function renderTotal() {
     precioTotal.textContent = formatear(datos.total);
 }
 
-// ---------- Petición a la API ----------
+// Petición a la API 
 fetch(API_URL)
     .then(response => {
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
