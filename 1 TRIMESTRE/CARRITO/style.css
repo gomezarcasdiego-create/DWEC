@@ -35,13 +35,15 @@ body {
     width: 100%;
     max-width: 100%;
     display: flex;
-    gap: 568px;
+    flex-wrap: wrap;
+    gap: 40px;
     margin: 0;
-    padding: 16px 0 0 0;
+    padding: 16px 20px 0 20px;
 }
 
 #contenedorTabla {
     flex: 1;
+    min-width: 520px;
     padding-left: 0;
 }
 
@@ -60,12 +62,72 @@ body {
     border-bottom: 1px solid #c7c1bd;
 }
 
+.carrito-table tbody td {
+    padding: 22px 0;
+    text-align: center;
+    border-bottom: 1px solid #e1ddd9;
+    vertical-align: middle;
+}
 
+.carrito-table tbody td.col-producto {
+    text-align: left;
+    padding-left: 10px;
+}
 
+.producto-titulo {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
 
+.producto-ref {
+    font-size: 0.85rem;
+    color: #444;
+}
 
+.col-cantidad {
+    white-space: nowrap;
+}
 
+.btn-cantidad {
+    width: 28px;
+    height: 28px;
+    border: none;
+    background: transparent;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
 
+.btn-cantidad:hover {
+    background: #e1ddd9;
+    border-radius: 50%;
+}
+
+.input-cantidad {
+    width: 52px;
+    height: 48px;
+    margin: 0 6px;
+    padding: 0;
+    text-align: center;
+    font-size: 1.1rem;
+    border: 1px solid #cfcac5;
+    border-radius: 8px;
+    background: #fff;
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+/* Quitar las flechas del input para que el número quede centrado */
+.input-cantidad::-webkit-outer-spin-button,
+.input-cantidad::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.error {
+    color: #b00020;
+    padding: 30px 0;
+}
 
 #Carritototal {
     width: 330px;
@@ -76,9 +138,27 @@ body {
     align-self: flex-start;
 }
 
+#Carritototal h2 {
+    margin: 0 0 18px;
+    font-size: 1.5rem;
+}
 
+#resumen {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 16px;
+    border-bottom: 1px solid #c7c1bd;
+}
 
+#resumen li {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+}
 
-
-
-
+.total-final {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 16px;
+}

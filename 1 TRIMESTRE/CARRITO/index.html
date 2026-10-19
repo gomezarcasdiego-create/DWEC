@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>agoodshop - Carrito</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <nav class="navbar bg-body-tertiary">
         <div class="container-fluid">
-            <span class="navbar-brand mb-0 h1">Agodoshop</span>
+            <span class="navbar-brand mb-0 h1">agoodshop</span>
         </div>
     </nav>
 
@@ -29,15 +29,20 @@
                 <tbody id="carrito"></tbody>
             </table>
         </div>
+
         <div id="Carritototal">
-            <p>Total: <span id="precioTotal"></span>€</p>
+            <h2>Total</h2>
+            <ul id="resumen"></ul>
+            <div class="total-final">
+                <span>TOTAL</span>
+                <strong id="precioTotal">0€</strong>
+            </div>
         </div>
     </div>
 
+    <!-- Primero la lógica, después la interfaz -->
+    <script src="carrito.js"></script>
     <script src="app.js"></script>
 </body>
 
 </html>
-
-
-
