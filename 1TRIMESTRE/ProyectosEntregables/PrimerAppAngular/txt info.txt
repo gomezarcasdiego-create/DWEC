@@ -1,0 +1,5 @@
+
+
+cd  C:/Users/daw2/Documents/DWEC/1TRIMESTRE/ProyectosEntregables
+
+$ cd PrimerAppAngular/
