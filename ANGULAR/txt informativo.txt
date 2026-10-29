@@ -1,0 +1,18 @@
+Primer Proyecto
+
+cd Users/daw2/Desktop/Daw2/1ºTr/DWEC/Angular
+
+ng new PrimeAppAngular --skip-tests
+
+ng g c components/loqeusea --skip-test
+
+code .
+
+npm install bootstrap
+
+
+"styles": [
+"src/styles.css", "node_modules/bootstrap/dist/css/bootstrap.min.css"
+],
+"scripts" : ["node_modules/bootstrap/dist/js/bootstrap.min.js"]
+},
