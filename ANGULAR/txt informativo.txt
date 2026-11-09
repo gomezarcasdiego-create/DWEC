@@ -15,10 +15,15 @@ npm install bootstrap
 "src/styles.css", "node_modules/bootstrap/dist/css/bootstrap.min.css"
 ],
 "scripts" : ["node_modules/bootstrap/dist/js/bootstrap.min.js"]
-},
+},   Esto va en el JSON reemplazando
 
 
 pwd para ver donde estas
 
+ng serve -o para arrancar a la aplicación
+
+ng g service services/worker --type=service --skip-tests crear aplicacion
+
+ng s -o para levantarlo
 
 
