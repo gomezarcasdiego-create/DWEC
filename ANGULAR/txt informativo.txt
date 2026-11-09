@@ -16,3 +16,9 @@ npm install bootstrap
 ],
 "scripts" : ["node_modules/bootstrap/dist/js/bootstrap.min.js"]
 },
+
+
+pwd para ver donde estas
+
+
+
